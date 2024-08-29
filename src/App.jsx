@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 
-import { calcPopulation, calcResources, calcElectronic, calcSteel, calcMotorParts, calcFertilizer } from '../calculator copy';
+import { calcPopulation, calcResources, calcElectronic, calcSteel, calcMotorParts, calcFertilizer } from '../calculator';
 import Slider from './components/Slider';
 
 function App() {
