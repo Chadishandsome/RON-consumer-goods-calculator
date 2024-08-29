@@ -1,10 +1,7 @@
 import React from 'react'
 import './Slider.css'
-import { useState } from 'react'
 
-function Slider({minVal, maxVal}) {
-
-  const [value, setValue] = useState(50)
+function Slider({name, minVal, maxVal, value, setValue, show}) {
 
   const handleChange = (e) => {
     const newValue = e.target.value;
@@ -13,9 +10,9 @@ function Slider({minVal, maxVal}) {
 
   return (
     <div className="slidecontainer">
-      <input className="slider" type="range" min={minVal} max={maxVal} value={value} step={1} onChange={handleChange}/>
+      <p>{name}</p>
+      <input className={show? "slider" : "hidden"} type="range" min={minVal} max={maxVal} value={value} onChange={handleChange}/>
       <input type="text" name="" id="" value={value} onChange={handleChange}/>
-      <h2>{value}</h2>
     </div>
   )
 }

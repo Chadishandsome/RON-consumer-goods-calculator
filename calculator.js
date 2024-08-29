@@ -1,3 +1,5 @@
+let population = 160 //million
+
 let resources = {
   //basic resources
   gold: 0,
@@ -15,10 +17,10 @@ let resources = {
 }
 
 let factories = {
-  consumerGoodFactories: 10,
+  consumerGoodFactories: Math.ceil(population/40),
   electronicFactories: 0,
   steelFactories: 0,
-  motorPartFactories: 1,
+  motorPartFactories: 0,
   fertilizerFactories: 0,
 }
 
