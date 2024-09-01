@@ -10,9 +10,9 @@ function Slider({name, minVal, maxVal, value, setValue, show}) {
 
   return (
     <div className="slidecontainer">
-      <p>{name}</p>
-      <input className={show? "slider" : "hidden"} type="range" min={minVal} max={maxVal} value={value} onChange={handleChange}/>
-      <input type="text" name="" id="" value={value} onChange={handleChange}/>
+      <p>{name}: {value}</p>
+      <input className="slider" type="range" min={minVal} max={maxVal} value={value} onChange={handleChange}/>
+      <input className={show? "" : "hidden"} type="text" name="" id="" value={value} onChange={handleChange}/>
     </div>
   )
 }
